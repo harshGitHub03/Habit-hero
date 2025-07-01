@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "start": "node ./bin/www",
-    "backend":"npx nodemon ./src/app"
+    "backend": "npx nodemon ./src/app"
   },
   "dependencies": {
     "bcrypt": "^6.0.0",

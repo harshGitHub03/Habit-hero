@@ -1,20 +1,19 @@
-const cors = require("cors");
-require("dotenv").config() // to access .env
 const express = require("express");
 const app = express();
+require("dotenv").config(); // to access .env
+const cors = require("cors");
 
+const PORT = parseInt(process.env.PORT) || 3000;
 require("../src/mongodb/mongodb.connect") // connect to mongodb
 
 //handle post request json body
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
-console.log(process.env.FRONTEND_URL)
+console.log(process.env.CORS_ORIGIN)
 app.use(cors({
-    origin: process.env.FRONTEND_URL,
+    origin: process.env.CORS_ORIGIN,
     credentials: true
-}))
-
-const PORT = parseInt(process.env.PORT) || 3000;
+}));
 
 const authRoutes = require("./routes/auth.routes");
 const habitRoutes = require("./routes/habit.routes")
