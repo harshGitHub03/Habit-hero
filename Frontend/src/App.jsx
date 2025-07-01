@@ -5,7 +5,7 @@ import HowItWorks from "./Components/About page components/HowItWorks";
 import HowItWorksPage from "./pages/HowItWorksPage";
 import Login from "./pages/Login";
 import SignUp from "./pages/SignUp";
-import Dashboard from "./pages/authTruePages/dashboard";
+import Dashboard from "./pages/authTruePages/Dashboard";
 import Achievements from "./pages/authTruePages/Achievement";
 import ProfilePage from "./pages/authTruePages/ProfilePage";
 import Logout from "./pages/authTruePages/LogoutPage";
