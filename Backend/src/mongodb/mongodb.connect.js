@@ -1,5 +1,5 @@
 const mongoose=require("mongoose")
 
-mongoose.connect("mongodb://localhost:27017/Habit-Hero")
+mongoose.connect(`${process.env.MONGO_URI}`)
 .then(()=>console.log("Connection successfull to mongodb."))
-.catch(()=>console.log("Error connecting mongodb."))
+.catch((e)=>console.log("Error connecting mongodb.",e))
