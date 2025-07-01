@@ -12,7 +12,7 @@ import Logout from "./pages/authTruePages/LogoutPage";
 
 import Habits from "./pages/authTruePages/Habits";
 import HabitHistory from "./pages/authTruePages/HabitHistory";
-import CreateHabitPage from "./Components/my-habit page components/createHabitPage";
+import CreateHabitPage from "./Components/my-habit page components/CreateHabitPage";
 import { useDispatch, useSelector } from "react-redux";
 import { useEffect, useRef } from "react";
 import NotFound from "./pages/NotFound";
