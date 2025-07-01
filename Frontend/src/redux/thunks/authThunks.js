@@ -18,7 +18,7 @@ export const verfyToken = createAsyncThunk("auth/checkJWT",
             if (!token)
                 return rejectWithValue("Session expired")
 
-            const response = await fetch(`${process.env.VITE_BACKEND_URL}/auth/profile`, {
+            const response = await fetch(`${import.meta.env.VITE_BACKEND_URL}/auth/profile`, {
                 method: "get",
                 credentials: "include",
                 headers: {
@@ -46,7 +46,7 @@ export const registerThunk = createAsyncThunk("auth/register",
     async (data, { getState, rejectWithValue }) => {
         const { name, email, password, confirmPassword } = data;
         try {
-            const response = await fetch(`${process.env.VITE_BACKEND_URL}/auth/register`, {
+            const response = await fetch(`${import.meta.env.VITE_BACKEND_URL}/auth/register`, {
                 method: "post",
                 headers: {
                     "Content-Type": "application/json"
@@ -78,7 +78,7 @@ export const loginThunk = createAsyncThunk("auth/login",
     async (data, { getState, rejectWithValue }) => {
         const { email, password } = data;
         try {
-            const response = await fetch(`${process.env.VITE_BACKEND_URL}/auth/login`, {
+            const response = await fetch(`${import.meta.env.VITE_BACKEND_URL}/auth/login`, {
                 method: "post",
                 credentials: "include",
                 headers: {
@@ -146,7 +146,7 @@ export const fetchUserData = createAsyncThunk("auth/profile",
                 return rejectWithValue("Not Authorized to make this request.")
             }
 
-            const response = await fetch(`${process.env.VITE_BACKEND_URL}/auth/profile`, {
+            const response = await fetch(`${import.meta.env.VITE_BACKEND_URL}/auth/profile`, {
                 method: "get",
                 credentials: "include",
                 headers: {
@@ -191,7 +191,7 @@ export const updateUserData = createAsyncThunk("auth/profile/update",
                 return rejectWithValue("Not Authorized to make this request.")
             }
 
-            const response = await fetch(`${process.env.VITE_BACKEND_URL}/auth/profile`, {
+            const response = await fetch(`${import.meta.env.VITE_BACKEND_URL}/auth/profile`, {
                 method: "put",
                 credentials: "include",
                 headers: {

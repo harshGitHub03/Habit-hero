@@ -16,18 +16,18 @@ const AboutPage = () => {
         <div className="relative overflow-hidden bg-[#f1f1f1] h-[100vh] w-full flex items-center justify-center">
             {/* written content */}
             <div className="flex items-center z-20 flex-col h-fit">
-                <span className="text-[40px] font-[400]">What is Habit Hero?</span>
-                <span className="text-xl">Level Up Your Life, One Habit at a Time.</span>
+                <span className="text-[40px] flex font-[400]">What is Habit Hero?</span>
+                <span className="text-xl flex">Level Up Your Life, One Habit at a Time.</span>
             </div>
 
-            <img src={image1} className="h-[60vh] shadow-2xl rotate-[12deg] absolute top-[15vh] left-[-2vw] border-white border-[4px]" />
-            <img src={image2} className="h-[26vh] shadow-2xl absolute top-[10vh] left-[-4vw] z-10 rotate-[-8deg] border-white border-[4px]" />
-            <img src={image3} className="h-[26vh] shadow-2xl absolute top-[-4vh] right-[-2vw] h-[60vh] z-10 rotate-[9deg] border-white border-[4px]" />
-            <img src={image4} className="h-[26vh] shadow-2xl absolute top-[6vh] right-[4vw] h-[30vh] z-10 rotate-[-5deg] border-white border-[4px]" />
-            <img src={image5} className="h-[26vh] shadow-2xl absolute bottom-[-7vh] rotate-[8deg] left-[7vw] z-10 rotate-[-5deg] border-white border-[4px]" />
-            <img src={image6} className="h-[30vh] shadow-2xl absolute right-[55vh] bottom-[-2vw] z-10 rotate-[-6deg] border-white border-[4px]" />
-            <img src={image7} className="h-[26vh] shadow-2xl absolute right-[20vh] bottom-[-2vw] z-10 rotate-[14deg] border-white border-[4px]" />
-            <img src={image8} className="h-[26vh] shadow-2xl absolute right-[35vh] bottom-[-8vw] z-10 h-[55vh] rotate-[8deg] border-white border-[4px]" />
+            <img src={image1} className="h-[20vh] sm:h-[25vh] md:h-[40vh] lg:h-[60vh] shadow-2xl rotate-[12deg] absolute top-[15vh] left-[-2vw] border-white border-[4px]" />
+            <img src={image2} className="h-[20vh] sm:h-[25vh] md:h-[40vh] lg:h-[26vh] shadow-2xl absolute top-[10vh] left-[-4vw] z-10 rotate-[-8deg] border-white border-[4px]" />
+            <img src={image3} className="h-[10vh] sm:h-[25vh] md:h-[40vh] lg:h-[26vh] shadow-2xl absolute top-[-4vh] right-[-2vw] h-[60vh] z-10 rotate-[9deg] border-white border-[4px]" />
+            <img src={image4} className="h-[20vh] sm:h-[25vh] md:h-[40vh] lg:h-[26vh] shadow-2xl absolute top-[6vh] right-[4vw] h-[30vh] z-10 rotate-[-5deg] border-white border-[4px]" />
+            <img src={image5} className="h-[20vh] sm:h-[25vh] md:h-[40vh] lg:h-[26vh] shadow-2xl absolute bottom-[-7vh] rotate-[8deg] left-[7vw] z-10 rotate-[-5deg] border-white border-[4px]" />
+            <img src={image6} className="h-[20vh] sm:h-[25vh] md:h-[40vh] lg:h-[30vh] shadow-2xl absolute right-[55vh] bottom-[-2vw] z-10 rotate-[-6deg] border-white border-[4px]" />
+            <img src={image7} className="h-[20vh] sm:h-[25vh] md:h-[40vh] lg:h-[26vh] shadow-2xl absolute right-[20vh] bottom-[-2vw] z-10 rotate-[14deg] border-white border-[4px]" />
+            <img src={image8} className="h-[20vh] sm:h-[25vh] md:h-[40vh] lg:h-[26vh] shadow-2xl absolute right-[35vh] bottom-[-8vw] z-10 h-[55vh] rotate-[8deg] border-white border-[4px]" />
         </div>
 
         <WhyHabitHero />

@@ -26,7 +26,7 @@ export const checkInHabit = createAsyncThunk("/habit-logs/:id/check-in",
             if (!habitId) return rejectWithValue("Habit id not found")
 
             //fetch request
-            const response = await fetch(`${process.env.VITE_BACKEND_URL}/habit-logs/${habitId}/check-in`, {
+            const response = await fetch(`${import.meta.env.VITE_BACKEND_URL}/habit-logs/${habitId}/check-in`, {
                 method: "post",
                 credentials: "include",
                 headers: {
@@ -70,7 +70,7 @@ export const getAllHabitLogsOfUser=createAsyncThunk("habit-logs/AllHabitslogs",
                 return rejectWithValue("Not Authorized to make this request.")
             }
             //fetch request
-            const response = await fetch(`${process.env.VITE_BACKEND_URL}/habit-logs/all-logs`, {
+            const response = await fetch(`${import.meta.env.VITE_BACKEND_URL}/habit-logs/all-logs`, {
                 method: "get",
                 credentials: "include",
                 headers: {
@@ -114,7 +114,7 @@ export const getTodayLogs=createAsyncThunk("habit-logs/today",
                 return rejectWithValue("Not Authorized to make this request.")
             }
             //fetch request
-            const response = await fetch(`http://localhost:3000/habit-logs/today`, {
+            const response = await fetch(`${import.meta.env.VITE_BACKEND_URL}/habit-logs/today`, {
                 method: "get",
                 credentials: "include",
                 headers: {

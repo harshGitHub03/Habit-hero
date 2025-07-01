@@ -22,7 +22,7 @@ export const getAllHabits = createAsyncThunk("habits/",
                 return rejectedWithValue("Not Authorized to make this request.")
             }
             //fetch request
-            const response = await fetch(`${process.env.VITE_BACKEND_URL}/habits/`, {
+            const response = await fetch(`${import.meta.env.VITE_BACKEND_URL}/habits/`, {
                 method: "get",
                 credentials: "include",
                 headers: {
@@ -64,7 +64,7 @@ export const createHabit = createAsyncThunk("habit/create",
                 return rejectedWithValue("Not Authorized to make this request.")
             }
 
-            const response = await fetch(`${process.env.VITE_BACKEND_URL}/habits/`, {
+            const response = await fetch(`${import.meta.env.VITE_BACKEND_URL}/habits/`, {
                 method: "post",
                 credentials: "include",
                 headers: {
@@ -110,7 +110,7 @@ export const updateHabit = createAsyncThunk("habit/update",
                 return rejectedWithValue("Not Authorized to make this request.")
             }
 
-            const response = await fetch(`${process.env.VITE_BACKEND_URL}/habits/${habitId}`, {
+            const response = await fetch(`${import.meta.env.VITE_BACKEND_URL}/habits/${habitId}`, {
                 method: "put",
                 credentials: "include",
                 headers: {
@@ -155,7 +155,7 @@ export const deleteHabit = createAsyncThunk("habit/delete",
             if (!isAuthenticated) {
                 return rejectedWithValue("Not Authorized to make this request.")
             }
-            const response = await fetch(`${process.env.VITE_BACKEND_URL}/habits/${habitId}`, {
+            const response = await fetch(`${import.meta.env.VITE_BACKEND_URL}/habits/${habitId}`, {
                 method: "delete",
                 credentials: "include",
                 headers: {

@@ -22,7 +22,7 @@ export const getAllAchievements = createAsyncThunk("/achivements",
             }
 
             //fetch request
-            const response = await fetch(`${process.env.VITE_BACKEND_URL}/achievements`, {
+            const response = await fetch(`${import.meta.env.VITE_BACKEND_URL}/achievements`, {
                 method: "get",
                 credentials: "include",
                 headers: {
