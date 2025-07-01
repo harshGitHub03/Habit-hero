@@ -8,6 +8,7 @@ require("../src/mongodb/mongodb.connect") // connect to mongodb
 //handle post request json body
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
+console.log(process.env.FRONTEND_URL)
 app.use(cors({
     origin: process.env.FRONTEND_URL,
     credentials: true
