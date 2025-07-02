@@ -6,7 +6,7 @@
 
 ## 🚀 Live Links
 
-- 🌐 **Frontend (Render):** [(https://habit-hero-frontend.onrender.com)]((https://habit-hero-frontend.onrender.com))
+- 🌐 **Frontend (Render):** [(https://habit-hero-frontend.onrender.com)](https://habit-hero-frontend.onrender.com)
 - 🖥️ **Backend (Render):** [https://habit-hero-backend.onrender.com](https://habit-hero-backend.onrender.com)
 
 ---
