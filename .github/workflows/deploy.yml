@@ -1,26 +1,24 @@
-name: Habit hero deply
-
+name: Habit Hero Deploy
 
 on:
- push:
-   branches: [main]
+  push:
+    branches: [main]
 
 jobs:
   frontend:
-    name:Build & deploy frontend
-    runs-on:ubuntu-latest
+    name: Build & Deploy Frontend
+    runs-on: ubuntu-latest
 
-  steps:
+    steps:
       - uses: actions/checkout@v3
 
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
           node-version: 18
-             
+
       - name: Install & Build React
         working-directory: frontend
         run: |
           npm install
           npm run build
-
