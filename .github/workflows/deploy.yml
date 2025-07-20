@@ -1,5 +1,4 @@
 name: Habit Hero Deploy
-
 on:
   push:
     branches: [main]
