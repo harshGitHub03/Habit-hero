@@ -1,21 +1,11 @@
-<<<<<<< HEAD
 name: Habit Hero Deploy
-=======
-name: Habit hero Deploy
-
->>>>>>> 6b0c3ca1bd296e55b627f9fba215a03a7bebc6e8
-
 on:
   push:
     branches: [main]
 
 jobs:
   frontend:
-<<<<<<< HEAD
     name: Build & Deploy Frontend
-=======
-    name: Build & deploy frontend
->>>>>>> 6b0c3ca1bd296e55b627f9fba215a03a7bebc6e8
     runs-on: ubuntu-latest
 
     steps:
